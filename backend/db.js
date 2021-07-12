@@ -1,8 +1,9 @@
 const  mongoose = require ('mongoose');
 const { MongoClient } = require('mongodb');
+const { dburi } = require('./secret.json');
 
 
-const uri = "mongodb+srv://test:32486566@cluster0.6j0pm.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const uri = dburi;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     const collection = client.db("test").collection("devices");
