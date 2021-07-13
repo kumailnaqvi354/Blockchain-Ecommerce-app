@@ -2,8 +2,6 @@ import { ethers, Contract } from 'ethers';
 import PaymentProcessor from './contracts/PaymentProcessor.json';
 import Dai from './contracts/Dai.json';
 
-
-
 const getBlockchain = () =>
   new Promise((resolve, reject) => {
     window.addEventListener('load', async () => {

@@ -33,7 +33,6 @@ function App() {
       <h1>Blockchain Ecommerce App</h1>
       <Store paymentProcessor={paymentProcessor} dai= {dai} />
       </div>
-     Hello
     </div>
   );
 }
